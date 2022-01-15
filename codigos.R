@@ -230,15 +230,14 @@ grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, plot7, plot8, plot9,
              plot10, plot11, plot12, nrow=3, ncol=4)
 
 # Criando Mapas para visualizar posição das casas
-# revgeocode(c(47.5112, -122.257))
 
+# Definindo área do gráfico
 lat_max <- round(max(houses$Latitude) + 0.05, 2)
 lat_min <- round(min(houses$Latitude) - 0.05, 2)
 long_max <- round(max(houses$Longitude) + 0.05, 2)
 long_min <- round(min(houses$Longitude) - 0.05, 2)
 
 # Gerando mapa geral da região onde os dados foram coletados
-#us <- c(left = -125, bottom = 25.75, right = -67, top = 49)
 us <- c(left = long_min, bottom = lat_min, right = long_max, top = lat_max)
 
 # Mapa da região onde os dados foram coletados

@@ -1,6 +1,6 @@
 ---
 title: "PROJETO FINAL ANALYTICS DESCRITIVA"
-author: "Reidson Carvalho"
+author: "Reidson Carvalho, Hugo Daher"
 date: "`r Sys.Date()`"
 output_dir: "."
 output:
