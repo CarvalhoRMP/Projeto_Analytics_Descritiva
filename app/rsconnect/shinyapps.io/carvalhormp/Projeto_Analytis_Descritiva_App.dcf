@@ -5,9 +5,9 @@ account: carvalhormp
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5371829
-bundleId: 5410904
+bundleId: 5472728
 url: https://carvalhormp.shinyapps.io/Projeto_Analytis_Descritiva_App/
-when: 1640574458.48254
-lastSyncTime: 1640574458.48254
+when: 1642290225.34153
+lastSyncTime: 1642290225.34153
 asMultiple: FALSE
 asStatic: FALSE

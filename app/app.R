@@ -30,7 +30,7 @@ ui <- dashboardPage(
       box(plotOutput("plot1", height = 250)),
       
       box(
-        title = "Range de Área",
+        title = "Faixa de Área",
         sliderInput("slider1", "Área do Imóvel entre:",
                     min=A_min,
                     max=A_max,
@@ -43,8 +43,8 @@ ui <- dashboardPage(
       box(plotOutput("plot2", height = 250)),
       
       box(
-        title = "Controle2",
-        selectInput("select", label="Avaliação do Imóvel:",
+        title = "Avaliação do Imóvel",
+        selectInput("select", label="Valor da Avaliação:",
                     choices=list("1" = 1, "2" = 2, "3" = 3, "4" = 4, "5" = 5,
                                  "6" = 6, "7" = 7, "8" = 8, "9" = 9, "10" = 10,
                                  "11" = 11, "12" = 12, "13" = 13),
@@ -56,7 +56,7 @@ ui <- dashboardPage(
       box(plotOutput("plot3", height = 250)),
       
       box(
-        title = "Range de Preço",
+        title = "Faixa de Preço",
         sliderInput("slider2", "Preço do Imóvel entre:",
                     min=P_min,
                     max=P_max,
@@ -103,7 +103,7 @@ server <- function(input, output) {
     PC_max <- max(input$slider2)
     range_houses <- subset(houses, Preco >= PC_min & Preco <= PC_max)
     qmplot(Longitude, Latitude, data=range_houses, maptype = "toner-lite",
-           color = I("red"), main="Localização dos Imóveis",
+           color = I("red"), main="Localização dos Imóveis x Faixa de Preço",
            xlab = "Longitude", ylab = "Latitude")
   })
 }
