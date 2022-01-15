@@ -3,6 +3,7 @@ library(shinydashboard)
 
 require(tidyverse)
 require(readr)
+require(ggmap)
 
 # Carregando base de dados
 houses <- read_rds("DADOS/houses.rds")
